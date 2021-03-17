@@ -1,0 +1,30 @@
+.results-section {
+    width: 70%;
+    max-width: 700px;
+
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 1em;
+    }
+
+    .results {
+        font-family: 'Cairo', sans-serif;
+        font-size: .9rem;
+        width: 100%;
+        border-top:1px solid #630000;
+        padding: 1em 2em;
+
+        display: flex;
+        flex-direction: column;
+        display: none;
+
+        div {
+            margin-bottom: 1em;
+            display: flex;
+
+            span {
+                margin-left: auto;
+            }
+        }
+    }
+}

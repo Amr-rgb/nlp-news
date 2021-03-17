@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP News</title>
+</head>
+
+<body>
+    <a id="logo" href="index.html">
+        <h1><span>NLP </span>News</h1>
+    </a>
+
+    <form onsubmit="return Client.formSubmit(event)">
+        <div class="invalid">url is invalid, please use valid url</div>
+        <div class="url-input">
+            <label for="url">url</label>
+            <input type="url" id="url">
+        </div>
+        <input id="submitBtn" type="submit" onsubmit="return Client.formSubmit(event)"
+            onclick="return Client.formSubmit(event)">
+    </form>
+
+    <section class="results-section">
+        <h2>Results will be shown here</h2>
+        <div class="results">
+            <div>agreement: <span class="agreement"></span></div>
+            <div>confidence: <span class="confidence"></span></div>
+            <div>irony: <span class="irony"></span></div>
+            <div>score_tag: <span class="score-tag"></span></div>
+            <div>subjectivity: <span class="subjectivity"></span></div>
+        </div>
+    </section>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
