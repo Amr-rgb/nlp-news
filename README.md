@@ -15,9 +15,9 @@ meaning cloud api
 (https://www.meaningcloud.com/products/sentiment-analysis)
 
 ## new tools learned in the project
-webpack: first project with webpack
-jest: it is the first time i make unit testing
-dealing with npm installations and errors understanding
+- webpack: first project with webpack
+- jest: it is the first time i make unit testing
+- dealing with npm installations and errors understanding
 
 ## problems faced me
 - i got struggled alot with npm commands,
