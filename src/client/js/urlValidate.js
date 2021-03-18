@@ -8,7 +8,7 @@ const urlTest = (value) => {
     }
 }
 
-function urlValidate(value) {
+export function urlValidate(value) {
     const invalidMsg = document.querySelector('.invalid')
 
     if (value.match(urlReg) === null) {
@@ -19,4 +19,4 @@ function urlValidate(value) {
     return urlTest(value)
 }
 
-export { urlValidate, urlTest }
+export { urlTest }

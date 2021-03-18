@@ -1,5 +1,3 @@
-import { urlValidate } from './urlValidate'
-
 const agreement = document.querySelector('.agreement')
 const confidence = document.querySelector('.confidence')
 const irony = document.querySelector('.irony')
@@ -39,7 +37,7 @@ const post = (url = '', data = {}) => {
         })
 }
 
-const formSubmit = (e) => {
+export const formSubmit = (e) => {
     e.preventDefault()
 
     const value = document.getElementById('url').value
@@ -49,8 +47,6 @@ const formSubmit = (e) => {
         submitBtn.disabled = true
         resultsHead.textContent = 'loading'
 
-        post('/add-url', { url: url })
+        post('http://localhost:3000/add-url', { url: url })
     }
 }
-
-export { formSubmit }

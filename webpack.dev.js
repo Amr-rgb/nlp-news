@@ -8,8 +8,6 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        clean: true,
         libraryTarget: 'var',
         library: 'Client'
     },

@@ -12,6 +12,7 @@ const BASE_API_URL = 'https://api.meaningcloud.com/sentiment-2.1'
 const app = express()
 
 const cors = require('cors')
+app.use(cors())
 
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
