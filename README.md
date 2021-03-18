@@ -19,4 +19,9 @@ webpack: first project with webpack
 jest: it is the first time i make unit testing
 dealing with npm installations and errors understanding
 
-# great project
+## problems faced me
+- i got struggled alot with npm commands,
+but i learned alot from that.
+- jest was a little bit confusing at first but i got it later.
+
+### great project
